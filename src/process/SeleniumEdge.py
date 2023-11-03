@@ -17,7 +17,7 @@ def crawl_data_edge():
     driver = uc.Edge(options=options, use_subprocess=True, headless=True,
                      executable_path=r'C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe')
     driver.set_window_size(1920, 1200)
-    driver.get("https://spiderum.com/?sort=hot&page_idx=1")
+    driver.get("https://shopee.vn")
     driver.forward()
     response = driver.execute_script("var xhr = new XMLHttpRequest();" +
                                      "xhr.open('GET', 'https://shopee.vn/api/v4/shop/rcmd_items?bundle=shop_page_category_tab_main&limit=30&offset=0&shop_id=111138057&sort_type=1&upstream=', false);" +
